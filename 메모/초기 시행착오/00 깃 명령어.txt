@@ -1,0 +1,23 @@
+git add.
+모든 폴더를 업로드
+
+git add a.txt
+선택적 업로드
+
+git status
+add가 필요한 파일들, add된 파일들을 각각 보여줌
+
+git commit -m "히스토리명"
+히스토리 생성
+
+git log
+커밋 내용 확인 -> Q 눌러서 로그 화면 상태 종료 가능
+
+git remote -v
+깃주소와 잘 연결됐는지 확인
+
+git branch
+연결된 브랜치명 확인
+
+git push origin 브랜치명
+해당 브랜치에 파일 업로드. git push origin master면 마스터 브랜치에 업로드.
