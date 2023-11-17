@@ -1,0 +1,15 @@
+- 개발자 가이드 : https://developer.android.com/guide?hl=ko
+- 앱 개발자를 위한 문서 : https://developer.android.com/docs?hl=ko
+- Kotlin으로 배우는 Android 기본사항 과정에서 사용되는 용어 : https://developer.android.com/courses/android-basics-kotlin/android-basics-kotlin-vocab?hl=ko
+- Android 스튜디오 소개 : https://developer.android.com/studio/intro?hl=ko
+    - 프로젝트 개요 : https://developer.android.com/studio/projects?hl=ko
+    - 프로젝트 만들기 : https://developer.android.com/studio/projects/create-project?hl=ko
+    - 템플릿의 코드 추가 : https://developer.android.com/studio/projects/templates?hl=ko
+    - 앱 빌드 및 실행 : https://developer.android.com/studio/run?hl=ko
+    - Android Emulator에서 앱 실행 : https://developer.android.com/studio/run/emulator?hl=ko
+- JetPack Compose : https://developer.android.com/jetpack/compose?hl=ko
+- 학습 센터 : https://developer.android.com/courses?index=..%2F..advanced-android-kotlin-training&hl=ko#0
+- 깃 브랜치 배우기 게임 : https://learngitbranching.js.org/?locale=ko
+
+
+- 안드로이드 스튜디오 설정 강의 : https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-2?hl=ko

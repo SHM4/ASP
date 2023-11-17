@@ -1,0 +1,44 @@
+app
+>manifests
+	>AndroidManifest.xml
+>java
+	>com.example.habitdog
+		>ui.theme
+			>MainActivity.kt
+	>com.example.habitdog
+		>ExampleInstrumentedTest
+	>com.example.habitdog
+		>ExampleUnitTest
+>res
+	>drawable
+		>ic_launcher_background.xml
+		>ic_launcher_foreground.xml
+	>mipmap
+		>ic_launcher.webp
+		>ic_launcher.webp
+		>ic_launcher.webp
+		>ic_launcher.webp
+		>ic_launcher.webp
+		>ic_launcher.xml
+	>ic_launcher_round
+		>ic_launcher_round.webp
+		>ic_launcher_round.webp
+		>ic_launcher_round.webp
+		>ic_launcher_round.webp
+		>ic_launcher_round.webp
+		>ic_launcher_round.xml
+	>values
+		>colors.xml
+		>strings.xml
+		>themes.xml
+	>xml
+		>backup_rules.xml
+		>data_extraction_rules.xml
+>Gradle Scripts
+	>build.gradle.kts
+	>build.gradle.kts
+	>proguard-rules.pro
+	>gradle.properties
+	>gradle-wrapper.properties
+	>local.properties
+	>settings.gradle.kts

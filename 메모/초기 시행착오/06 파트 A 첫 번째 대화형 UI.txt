@@ -1,0 +1,2 @@
+https://developer.android.com/courses?index=..%2F..advanced-android-kotlin-training&hl=ko#0
+> Android 개발자 기초(자바) > 단원 1: 시작하기 > 과정 1: 첫 앱 빌드 > 1.1 과정은 이미 진행한 것과 동일한 내용 > 1.2 파트 A: 첫 번째 대화형 UI

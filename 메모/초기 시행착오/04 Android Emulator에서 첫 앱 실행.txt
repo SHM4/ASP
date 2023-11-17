@@ -1,0 +1,18 @@
+https://developer.android.com/codelabs/basic-android-kotlin-compose-emulator?hl=ko&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-1-pathway-2%3Fhl%3Dko%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-emulator#3
+
+1. 가상 기기 만들기 및 관리하기 : https://developer.android.com/studio/run/managing-avds?hl=ko
+- Android Virtual Device(AVD) : Android Emulator에서 시뮬레이션하려는 다양한 기기의 특성을 정의하는 구성이다.
+- Virtual Device Manager(기기 관리도구)
+    - 프로젝트 시작 전 : 안드로이드 스튜디오 시작 화면 > More Actions > Virtual Device Manager
+    - 프로젝트 시작 후 : 기본 메뉴 바 > Tools > Device Manager > Create Device
+- AVD
+    - Select Hardware - 하드웨어 프로필
+        - 공장에서 배송된 상태 그대로의 기기 특성 정의
+        - Play Store 열에서 Google Play 로고로 라벨이 지정된 기기 정의 - Google Play Store 앱 및 Google Play 서비스 액세스 권한이 포함됨
+    - System Image - 시스템 이미지
+...이하 생략
+
+3. Android Emulator에서 앱 실행
+- Tools > Device Manager > Create device > Category : Phone > Pixel 5 선택 > Next > S 선택(필요 시 다운로드) > Next  > Finish > Device Manager 대화상자 종료
+- 안드로이드 스튜디오 상단 드롭다운 메뉴 > 내가 만든 가상 기기 선택 > Run > 가상 기기에서 앱 실행
+

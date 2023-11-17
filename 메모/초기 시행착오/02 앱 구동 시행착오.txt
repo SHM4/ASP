@@ -1,0 +1,91 @@
+----- 첫 시도 -----
+
+1. android-studio 2022.3.1.20-windows 버전 설치 - Giraffe
+
+2. 안드로이드 스튜디오 실행
+
+3. 새 프로젝트 생성
+1) 프로젝트 타입 : Empty Activity
+2) Name 설정 -> Package name, Save location 자동으로 설정됨
+3) Minimun SDK 설정(앱이 지원할 가장 낮은 안드로이드 버전)
+4) Build configuration language(빌드 시스템을 구성하는 데 사용되는 DSL(Domain-Specific Language)을 선택) : Kotlin DSL (build.gradle.kts)
+
+4. 자바 언어 설정 안 되는 것 같아, 일단 생성한 프로젝트 삭제
+1) 안드로이드 스튜디오 종료
+2) 프로젝트 폴더 위치 확인(C:\Users\kbr\AndroidStudioProjects)
+3) 프로젝트 폴더 삭제
+4) 안드로이드 스튜디오 재시작('Welcome to Android Studio' 창에서 'Open an existing project' 목록에 여전히 삭제한 프로젝트가 보인다면, 해당 항목 옆의 'X'를 클릭해서 목록에서 제거)
+
+5. 뭔가 문제가 있는 것 같아 안드로이드 스튜디오 튜토리얼을 찾아보기로 함.
+
+----- 튜토리얼 https://developer.android.com/training/basics/firstapp?hl=ko -----
+
+1. 프로젝트 생성
+1) New Project > Phone and Tablet > Empty Activity > Next
+2) Name - Greeting Card
+3) Packege name : 파일 구조에서 파일이 구성되는 방식 - com.example.greetingcard
+4) Save location : 프로젝트와 관련된 모든 파일이 저장되는 위치 - C:\Users\kbr\AndroidStudioProjects\GreetingCard
+5) Minimum SDK - API 21: Android 5.0 (Lollipop)
+6) Build configuration language - Kotlin DSL (build.gradle.kts) [Recommended]
+- Build configuration language에 대한 설명 없음
+- Language, Use legacy android.support libraries 설정에 대한 설명 있지만, 프로그램에는 보이지 않음
+- 버전 차이로 인한 문제로 보임
+- 그리고 Empty Compose Activity 템플릿을 사용하랬는데, 비슷한 건 Empty Activity밖에 안 보임
+- Empty Activity 템플릿에 Language 선택 필드가 안 보이는 건 호환되는 프로그래밍 언어가 고정돼서 그런 것으로 보임. Compose 템플릿의 경우 Language 필드가 보이기는 하지만 Compose는 Kotlin과만 호환되므로 Language 필드를 변경할 수 없다는 것으로 보아 Empty Activity 템플릿도 Kotlin과만 호환되는 것으로 보임
+
+2. 이것도 코틀린 먼저 공부하지 않고는 문제가 될 것 같음
+- 안드로이드 스튜디오 개발자 가이드 : https://developer.android.com/guide?utm_source=android-studio&hl=ko
+
+----- 231115 -----
+
+1. 일단 생활코딩 강의를 들어보기로 함 - https://www.opentutorials.org/course/3930/26656
+- android development documentation 검색 > https://developer.android.com/docs?hl=ko : 앱 개발자를 위한 문서
+- https://developer.android.com/training/basics/firstapp?hl=ko : 첫 앱 빌드 - 위의 튜토리얼 문서랑 동일한 사이트 > 일단 스킵
+
+2. 안드로이드 스튜디오 설치 후 프로젝트 빌드
+- 강사는 Empty Activity 선택하고 Name, Language만 설정하고 넘어감
+- https://arer.tistory.com/242 - 전에 확인한 내용도 있고, 일단 Empty Views Activity로 생성해보기로 함
+- Name : My Java World
+- Language : Java
+- Minimum SDK - API 16 ("Jelly Bean"; Android 4.1) - 일단 최저 버전으로 설정해 봄
+- 나머지 옵션은 안 건듦
+
+3. 빌드 완료 후 MainActivity 파일이 자동으로 열림
+- app/java/com.example.myjavaworld/MainActivity - 이 파일이 실행되기로 약속됨
+- setContentView(R.layout.activity_main); - 앱이 실행되면 R.layout.activity_main 콘텐츠에 따라 화면을 보여줌
+- res/layout/activity_main.xml
+	- 우상단 Code/Split/Design 옵션을 선택해서 코드 또는 시각적 화면을 볼 수 있다.
+- android:text="Hello World!" > android:text="Hello Java World!"
+
+4. 가상 기기에서 앱 실행
+- 가상 기기 생성 방법
+	- 강의 : 상단 바 > Tools > AVD Manager(Android Virtual Device Manager) > Create Virtual Device
+	- 나 : 상단 바 > Tools > Device Manager > Create Device
+- 기본으로 있는 기기 사용 > 메인 화면 우상단 Run 'app'
+	- 강의 : 가상 안드로이드 폰 실행되며 앱 구동 확인
+	- 나 : 오류 발생
+An issue was found when checking AAR metadata:
+
+  1.  Dependency 'androidx.activity:activity:1.8.0' requires libraries and applications that
+      depend on it to compile against version 34 or later of the
+      Android APIs.
+
+      :app is currently compiled against android-33.
+
+      Recommended action: Update this project to use a newer compileSdk
+      of at least 34, for example 34.
+
+      Note that updating a library or application's compileSdk (which
+      allows newer APIs to be used) can be done separately from updating
+      targetSdk (which opts the app in to new runtime behavior) and
+      minSdk (which determines which devices the app can be installed
+      on).
+
+5. 오류 수정
+- Gradle Scripts/build.gradle.kts(Module:app) > (compileSdk = 33 > 34) > 상단 알림창 : Gradle files have changed since last project sync. A project sync may be necessary for the IDE to work properly. > Sync Now > 콘솔창 : BUILD SUCCESSFUL in 2s > 상단 알림창 : You can use the Project Structure dialog to view and edit your project configuration > Open (Ctrl+Alt+Shift+S) > (Project Structure - Modules - app - Properties) 화면 뜸 - 그냥 설정 확인 화면으로 보임
+
+6. 재실행
+- Run 'app' > 성공!
+
+7. 프로젝트 삭제
+- C:\Users\kbr\AndroidStudioProjects\MyJavaWorld
