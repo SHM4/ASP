@@ -1,0 +1,5 @@
+중요 개념
+
+1. 이미지 추가
+- View > Tool Windows > Resources Manager > + > Import Drawables > Next > Import
+- 저장 위치 : C:\Users\kbr\AndroidStudioProjects\프로젝트명\app\src\main\res\drawable
