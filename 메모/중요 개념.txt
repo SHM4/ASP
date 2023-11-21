@@ -1,5 +1,8 @@
-중요 개념
-
 1. 이미지 추가
 - View > Tool Windows > Resources Manager > + > Import Drawables > Next > Import
 - 저장 위치 : C:\Users\kbr\AndroidStudioProjects\프로젝트명\app\src\main\res\drawable
+
+2. 디버깅
+https://developer.android.com/codelabs/basic-android-kotlin-compose-intro-debugger?hl=ko&continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-2%3Findex%3D..%252F..%252Fandroid-training%26hl%3Dko%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-intro-debugger#0
+
+3. 
