@@ -75,7 +75,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
                 painter = painterResource(topic.imageResourceId),
                 contentDescription = null,
                 modifier = Modifier
-                    .size(68.dp)
+                    .size(68.dp) // 가로 또는 세로 길이만 설정할 경우 aspectRatio 속성을 통해 설정하지 않은 값을 비율에 맞게 조정할 수 있다.
                     .background(MaterialTheme.colorScheme.surfaceVariant),
                 contentScale = ContentScale.Crop, // 레이아웃에 이미지가 맞도록 스케일 조정
             )
